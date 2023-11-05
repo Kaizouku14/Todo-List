@@ -3,7 +3,7 @@ let items = [];
 renderItems();
 
 function renderItems(){
-  let lists = '', i = 0;
+  let lists = '';
 
   items.forEach((value) =>{
     const {todo,dueDate} = value;
