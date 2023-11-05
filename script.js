@@ -8,8 +8,8 @@ function renderItems(){
   items.forEach((value) =>{
     const {todo,dueDate} = value;
     const html = `<div class ="list">
-                    <input type="checkbox" class="accept" data-todo ="todo-${i++}">
-                    <div class="todo" data-todo="todo-${i++}">${todo}</div> 
+                    <input type="checkbox" class="accept">
+                    <div class="todo">${todo}</div> 
                     <div class="date">${dueDate}</div>
                     <button class="delete-button js-delete">x</button>
                   </div>`;
