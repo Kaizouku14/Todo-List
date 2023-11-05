@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Poppins,Arial, Helvetica, sans-serif;
+}
+
+.main{
+  align-items: center;
+  background-color: rgb(212, 212, 212); 
+  width: 330px;
+  height: 360px;
+  border-radius: 15px;
+  border: 1px solid black;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+ font-weight:bolder;
+}
+
+.content{
+display: flex;
+flex-direction: column;
+height: 280px;
+margin: 10px 15px;
+border-radius: 20px;
+overflow: auto;
+padding-left: 3px;
+background-color: rgb(255, 240, 221);
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.adder{
+ display: flex;
+ justify-content: space-evenly;
+ margin: 10px 0 10px 0;
+}
+
+.input {
+width: 120px;
+background-color: inherit;
+outline: 0;
+border-width: 0 0 2px;
+}
+
+.date {
+background-color: inherit;
+border: none;
+width: 100px;
+}
+
+.add-button{
+border-radius: 50%;
+border: 1px solid gray;
+background-color: lightgreen;
+}
+
+.list{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: center;
+ border-radius: 20px;
+ padding: 0 10px 0 10px;
+ margin: 5px 8px 0 8px;
+ font-size: 0.80rem;
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;        
+}
+
+.date{
+font-size: 0.70rem;
+}
+
+.delete-button{
+border: none;
+background-color: inherit;
+color: red;
+}
+
