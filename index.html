@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="check-list.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
-        <div class="main">
-            <div class="header">
-                <p class="title">To-Do List</p>
-            </div>
+        <main>
+            <header>
+                <h1>To-Do List</h1>
+                <img class="theme-button" src="icons8-dark-mode-30.png" alt="darkmode">
+                <p>Create your task here.</p>
 
-            <div class="content">
                 <div class="adder">
                     <input type="text" placeholder="Text" class="input js-text">
                     <input type="date" class="date js-due-date">
                     <button class="add-button js-add">+</button>
-                </div>  
-
+                </div> 
+            </header>
+            
+            <div class="content">  
                 <div class="List-Todo"></div>
             </div>
-        </div>
+
+            <footer>
+                <a href="https://github.com/Kaizouku14" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.facebook.com/alv.manda.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/zyalv.m/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+            </footer>
+        </main>
+        
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
