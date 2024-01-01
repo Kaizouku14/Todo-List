@@ -51,4 +51,21 @@ function renderItems() {
         renderItems();
     }
  });
+ let clicked = false;
 
+ document.querySelector('.theme-button').addEventListener('click', (event) => {
+     const body = document.body;
+ 
+     if (!clicked) {
+         event.target.setAttribute('src', 'icons8-light-mode-78.png');
+         body.classList.add('dark-mode');
+ 
+         clicked = true;
+     } else {
+         event.target.setAttribute('src', 'icons8-dark-mode-30.png');
+         body.classList.remove('dark-mode');
+ 
+         clicked = false;
+     }
+ });
+ 
