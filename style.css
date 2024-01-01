@@ -1,89 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --white: #f5f1f1;
+    --black: #1d1c1c;
+    --size: 10px;
+}
+
 body{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Poppins,Arial, Helvetica, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: var(--white);
 }
 
-.main{
-  align-items: center;
-  background-color: rgb(212, 212, 212); 
-  width: 330px;
-  height: 360px;
-  border-radius: 15px;
-  border: 1px solid black;
-  flex-direction: column;
+header{ 
+  position: relative; 
+  padding: var(--size);
+  width: auto;
+  color: var(--white);
+
 }
 
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header h1{  
+    font-size: 1.25rem;
 }
 
-.title{
- font-weight:bolder;
+header img{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: background-color 0.15s;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 20px;
+}
+
+header img:hover{
+    background-color: rgb(204, 202, 202);
+}
+
+header p{
+    font-size: 0.80rem;
+}
+
+main{
+    position: relative;
+    background-color: var(--black);
+    height: 400px;
+    width: 400px;
+    padding: var(--size);
+    border-radius: var(--size);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .content{
-display: flex;
-flex-direction: column;
-height: 280px;
-margin: 10px 15px;
-border-radius: 20px;
-overflow: auto;
-padding-left: 3px;
-background-color: rgb(255, 240, 221);
-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: auto;
+    height: 275px;
+    overflow: auto;
+    padding: var(--size);
 }
 
 .adder{
- display: flex;
- justify-content: space-evenly;
- margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--size);
 }
 
-.input {
-width: 120px;
-background-color: inherit;
-outline: 0;
-border-width: 0 0 2px;
+.adder input{
+    border-radius: var(--size);
+    border: none;
+    padding: 5px;
 }
 
-.date {
-background-color: inherit;
-border: none;
-width: 100px;
+.adder input:focus{
+    outline: none;
 }
 
-.add-button{
-border-radius: 50%;
-border: 1px solid gray;
-background-color: lightgreen;
+.adder button{
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.list{
- display: flex;
- justify-content: space-between;
- align-items: center;
- text-align: center;
- border-radius: 20px;
- padding: 0 10px 0 10px;
- margin: 5px 8px 0 8px;
- font-size: 0.80rem;
- box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;        
+.adder button:hover{
+    transition: background-color 0.15s;
+    background-color: rgb(204, 202, 202);
 }
 
-.date{
-font-size: 0.70rem;
+.List-Todo .list {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--size);
+    text-align: center;
+    padding: var(--size);
+    max-width: 100%;
+    margin: 5px 8px 0 8px;
+    overflow: auto;
+    font-size: 0.80rem;
+    background-color: var(--white);
+    box-shadow: rgba(224, 225, 226, 0.3) 0px 1px 2px 0px, rgba(208, 210, 211, 0.15) 0px 2px 6px 2px;
+}
+
+.List-Todo .list > * {
+    flex-shrink: 1; /* Allow items to shrink to fit */
 }
 
 .delete-button{
-border: none;
-background-color: inherit;
-color: red;
+    border: none;
+    background-color: inherit;
+    color: red;
+    font-size: 1rem;
 }
+
+footer {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+a{ 
+   color: var(--black);
+   cursor: pointer;
+   font-size: 1.20rem;
+}
+
+a:hover{
+     color: #242424;
+}
+
+body.dark-mode {
+    background-color: var(--black);
+}
+
+.dark-mode a {
+    color: var(--white);
+}
+
+.dark-mode main{
+    background-color: rgb(228, 225, 225); 
+}
+
+.dark-mode header{
+    color: var(--black);
+}
+
+
+
 
