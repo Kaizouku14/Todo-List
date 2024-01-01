@@ -160,6 +160,24 @@ body.dark-mode {
 .dark-mode header{
     color: var(--black);
 }
+@media only screen and (max-width: 600px) {
+  
+    main{
+        width: 300px;
+        height: 400px;
+    }
+
+    .adder input{
+        padding: 5px;
+        width: 105px;
+    }
+
+    .content{
+        width: auto;
+        height: 250px;
+    }
+
+}
 
 
 
