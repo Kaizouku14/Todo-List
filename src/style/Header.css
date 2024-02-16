@@ -1,0 +1,71 @@
+header{ 
+    position: relative; 
+    padding: 10px;
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+}
+  
+header h1{  
+    font-size: 1.25rem;
+}
+
+header img{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: background-color 0.15s;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    top: 5px;
+    margin: auto;
+    width: 20px;
+}
+
+header img:hover{
+    background-color: rgb(204, 202, 202);
+}
+
+header p{
+    font-size: 0.80rem;
+}
+
+.task-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+header input{
+    box-shadow: rgba(78, 78, 78, 0.05) 0px 6px 24px 0px, rgba(88, 88, 88, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    width: 250px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(224, 217, 217);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+button:hover{
+    transition: background-color 0.15s;
+    background-color: rgb(175, 171, 171);
+}

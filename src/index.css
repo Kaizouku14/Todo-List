@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
+
+:root{
+    --white: #f5f1f1;
+    --black: #1d1c1c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    box-sizing: border-box;
+ }
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
 }
+
+body.light-mode,  
+.light-mode header, 
+.light-mode main
+{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.light-mode .list .task,
+.light-mode input,  
+.light-mode button
+{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.light-mode a{
+    color: var(--black);
+}
+
+.light-mode .delete-button{
+    background-color: var(--white);
+    color: red;
+}
+
+.light-mode input::placeholder{
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
